@@ -26,7 +26,41 @@ The SQLite database (`db.sqlite3`) contains restaurant data loaded from the `res
 
 ### 3. Image of the Working App with a Search Query and Its Results
 
-<img src="assets/images/dark mode preview.png">
+<img src="Django Search Application/dish_search_app/searchapp/static/Screenshot 2024-06-19 183002.png">
+<img src="Django Search Application/dish_search_app/searchapp/static/Screenshot 2024-06-19 183029.png">
+
+---
+
+Replace `search_app_screenshot.png` with the actual filename of your screenshot showing the app's search functionality in action.
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone [<repository-url>](https://github.com/priyamjha/Django-Search-Application.git)
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Apply migrations and load data:
+
+   ```bash
+   python manage.py migrate
+   python manage.py load_restaurants
+   ```
+
+4. Run the development server:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+5. Open a web browser and navigate to `http://127.0.0.1:8000/` to view the application.
 
 ## Usage
 
@@ -53,5 +87,4 @@ dish_search_project/
 
 ## Additional Notes
 
-- Ensure `restaurants_small.csv` is placed in the appropriate directory (`searchapp/static/csv/`) before running the data loading command ('python manage.py load_restaurants').
-- Customize the application further as per specific requirements or additional features.
+- Ensure `restaurants_small.csv` is placed in the appropriate directory (`searchapp/static/csv/`) before running the data loading command.
